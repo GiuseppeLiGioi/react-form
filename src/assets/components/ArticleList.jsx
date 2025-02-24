@@ -16,6 +16,8 @@ const ArticleList = () => {
     const addArticle = (e) => {
         e.preventDefault(); // Evita il refresh della pagina
 
+    //{} necessarie perchè lavoro con arr di oggetti, ad ogni aggiunta ricostruisco l'ogetto da mostrare, formato da id e title.
+    //se facevo esercizio con array di stringhe, come fatto da Ale in classe, sarebbe stato:  setArticles([...articles, newArticle]);
         if (newArticle !== "") { 
             setArticles([...articles, { id: articles[articles.length -1].id, title: newArticle }]);
             setNewArticle("");
