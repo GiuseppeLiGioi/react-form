@@ -1,7 +1,10 @@
 const Header = () => {
     return(
         <header>
-            <h2>TITOLO HEADER</h2>
+            <div className="container_header">
+            <h2>LISTA ARTICOLI CON USE STATE</h2>
+            </div>
+            
         </header>
 
     )
